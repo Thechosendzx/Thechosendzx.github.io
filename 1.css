@@ -1,0 +1,106 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding-top: 10px; 
+    background-image: url('image/background2.webp'); 
+    background-size: cover; 
+    background-position: auto; 
+    background-repeat: no-repeat; 
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 100px 0;
+    text-align: left;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.header-content {
+    position: absolute;
+    top: 150px; 
+    left: 20px; 
+    padding: 0 20px;
+}
+
+.transparent-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    text-align: left;
+    padding: 10px 0;
+}
+
+.transparent-box a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: x-large;
+}
+
+
+.about-vaquita {
+    position: absolute;
+    top: 1000px;
+    left: 1090px; 
+    color: aliceblue;
+    font-size: large;
+}
+
+.how-to-help {
+    position: absolute;
+    top: 1200px; 
+    left: 60px; 
+    color: aliceblue;
+    font-size: large;
+
+}
+.how-help {
+    position: absolute;
+    top: 1600px; 
+    left: 550px;
+    color: aliceblue;
+    font-size: xx-large;
+
+}
+
+.options-container {
+    position: absolute;
+    top: 140px; 
+    left: 210px; 
+    color: rgb(255, 4, 33);
+    font-size: 50px;
+
+}
+
+.option-button {
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #40ccff; 
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+footer {
+    position: absolute;
+    bottom: -1100px;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
