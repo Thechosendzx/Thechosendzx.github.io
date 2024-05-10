@@ -29,9 +29,16 @@
 
 .money{
   background-color: rgba(255, 255, 255, 0.5);
- 
 }
 
+
+html {
+    transform: scale(0.8); 
+    transform-origin: top left; 
+    width: 125%; 
+    height: 125%; 
+}
+  
 .A, .B, .C {
     position: absolute;
     font-size: 18px;
@@ -45,19 +52,19 @@
 
 
 .B {
-    bottom: 80vh; 
-    right: 15vw; 
+    bottom: 95vh; 
+    right: 20vw; 
 
 }
 
 .A {
     bottom: 50vh;
-    right: 15vw;
+    right: 20vw;
 }
 
 .C {
-    bottom: 70vh;
-    right: 30vw;
+    bottom: 85vh;
+    right: 40vw;
 }
 
 img {
@@ -70,7 +77,7 @@ img {
 
 tw-sidebar{
   display:none;
-  
+}
 </style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Examine Map" tags="1" position="1400,1600" size="100,100">&lt;div class=&quot;money&quot;&gt; Your have: $money gold coin &lt;/div&gt;
 &lt;div class=&quot;money&quot;&gt;Your have: $artifacts artifact collection&lt;/div&gt;
 (if: $key is true)[ &lt;div class=&quot;money&quot;&gt;&quot;You currently have a key, which can be used to unlock areas within the temple.&quot;&lt;/div&gt;] 
@@ -88,11 +95,9 @@ tw-sidebar{
 &lt;/div&gt;
 
 
-</tw-passagedata><tw-passagedata pid="2" name="Hanging Gardens" tags="" position="925,2025" size="100,100">
-(if: $artifacts is 3)[
+</tw-passagedata><tw-passagedata pid="2" name="Hanging Gardens" tags="" position="925,2025" size="100,100">(if: $artifacts is 3)[
 Congratulations! You&#39;ve explored all the chapters of this game and I&#39;m sure you&#39;ve learned a wealth of history from it. Now, let&#39;s go back to reality from the virtual world and discover the beauty around you! We suggest you go to the museum to see those real rtifacts with your own eyes, so that the charm of history will continue to accompany you in reality and inspire you to further explore and understand art.
 [[contine|continue]]
-
 ]
 (else:)[
     You have not yet uncovered all the mysteries of the rest of the world. Explore more to find the hidden truths. Come back later when you have seen all three artifacts.
@@ -102,16 +107,11 @@ Congratulations! You&#39;ve explored all the chapters of this game and I&#39;m s
 </tw-passagedata><tw-passagedata pid="3" name="Jade Seal" tags="" position="1400,1900" size="100,100">&lt;div class=&quot;money&quot;&gt; Your have: $money gold coin &lt;/div&gt;
 &lt;div class=&quot;money&quot;&gt;Your have: $artifacts artifact collection&lt;/div&gt;
 As your ship docks at the bustling port, the air fills with the scent of jasmine and incense. Ancient architecture lines the bustling streets, where merchants and locals mingle. 
-
-
- 
 &lt;img src=&quot;https://Thechosendzx.github.io/twine/Untitled%20design.jpg&quot;&gt;
-
-
 [[Explore the local market|Local Market]]
 [[Seek information about the grand palace|Palace Inquiry]]
 [[Attempt to approach the grand palace|Gate]]
-[[Return to your ship|Examine Map]]
+[[Return to your ship|Examine Map]] &lt;/div&gt;
 </tw-passagedata><tw-passagedata pid="4" name="Ancient Temple" tags="" position="2025,1750" size="100,100">&lt;div class=&quot;money&quot;&gt; Your have: $money gold coin &lt;/div&gt;
 &lt;div class=&quot;money&quot;&gt;Your have: $artifacts artifact collection&lt;/div&gt;
 As you step off the boat, the lively harbor buzzes around you. The salty sea air mixes with the smell of fresh fish, while the sun casts its glow on weathered stone buildings and distant ruins.
@@ -121,62 +121,43 @@ A local fisherman, noticing your curious gaze, approaches with a friendly smile.
 [[Ask about your location|Find Out Location]]
 [[Inquire about the buildings|Learn About Buildings]]
 [[Visit the market|Go to Market]]
-[[Return to your ship|Examine Map]]</tw-passagedata><tw-passagedata pid="5" name="Local Market" tags="" position="1425,2150" size="100,100">Navigating through the bustling market of this place, you pause at a stall adorned with ancient artifacts. The merchant, who sees your interest, leans in.
-
-&quot;Ah, curious traveler, this used to be known as Beijing, filled with the echoes of emperors,&quot; he remarks casually.
-
+[[Return to your ship|Examine Map]]</tw-passagedata><tw-passagedata pid="5" name="Local Market" tags="" position="1425,2150" size="100,100">Navigating through the bustling market of this place, you pause at a stall adorned with ancient artifacts. The merchant, who sees your interest, leans in.&quot;Ah, curious traveler, this used to be known as Beijing, filled with the echoes of emperors,&quot; he remarks casually.
 &lt;img src=&quot;https://Thechosendzx.github.io/twine/Untitled%20design%20(1).jpg&quot;&gt;
-
 [[Inquire more about Beijing|Learn About Beijing]]
 [[Purchase foriegn artifacts|foriegn arts]]
 [[Purchase a key|key]]
 [[Seek information about the grand palace|Palace Inquiry]]
 [[Return to the port|Jade Seal]]
-</tw-passagedata><tw-passagedata pid="6" name="Palace Inquiry" tags="" position="1625,2425" size="100,100">&quot;Ah, the Forbidden City,&quot; he begins, adjusting his glasses. &quot;It&#39;s not just an architectural marvel but a repository of a thousand years of history. The emperors of old ruled from its sacred halls, and it holds many secrets yet to be discovered by the outside world.&quot;
-
-&quot;You see, each dynasty added their own touch to it, filling it with priceless artifacts and forbidden lore. Only those deemed worthy have ever walked its private gardens and peered into its hidden chambers.&quot;
-
+</tw-passagedata><tw-passagedata pid="6" name="Palace Inquiry" tags="" position="1625,2425" size="100,100">&quot;Ah, the Forbidden City,&quot; he begins, adjusting his glasses. &quot;It&#39;s not just an architectural marvel but a repository of a thousand years of history. The emperors of old ruled from its sacred halls, and it holds many secrets yet to be discovered by the outside world.&quot;&quot;You see, each dynasty added their own touch to it, filling it with priceless artifacts and forbidden lore. Only those deemed worthy have ever walked its private gardens and peered into its hidden chambers.&quot;
 &lt;img src=&quot;https://Thechosendzx.github.io/twine/Untitled%20design%20(3).jpg&quot;&gt;
-
 [[Attempt to approach the grand palace|Gate]]
 [[Return to the port|Jade Seal]]
-</tw-passagedata><tw-passagedata pid="7" name="Learn About Beijing" tags="" position="1500,2425" size="100,100">&quot;Beijing is the heart of China. It has served as the imperial capital for over eight centuries,&quot; the merchant elaborates with a proud smile. &quot;It&#39;s not just the political center; it&#39;s also a cultural beacon, home to the Forbidden City and countless historical treasures.&quot;
-
-&quot;Over the dynasties, emperors ruled from the dragon throne within its walls. Today, it remains a vital link to our past and a vibrant city.&quot;
-
+</tw-passagedata><tw-passagedata pid="7" name="Learn About Beijing" tags="" position="1500,2425" size="100,100">&quot;Beijing is the heart of China. It has served as the imperial capital for over eight centuries,&quot; the merchant elaborates with a proud smile. &quot;It&#39;s not just the political center; it&#39;s also a cultural beacon, home to the Forbidden City and countless historical treasures.Over the dynasties, emperors ruled from the dragon throne within its walls. Today, it remains a vital link to our past and a vibrant city.&quot;
 &lt;img src=&quot;https://Thechosendzx.github.io/twine/Untitled%20design%20(2).jpg&quot;&gt;
-
 [[Seek information about the Forbidden City |Palace Inquiry]]
 [[Return to the port|Jade Seal]]
-</tw-passagedata><tw-passagedata pid="8" name="Gate" tags="" position="1775,2425" size="100,100">
-You move to the majestic gates of the Forbidden City. The guard eyes you cautiously.
+</tw-passagedata><tw-passagedata pid="8" name="Gate" tags="" position="1775,2425" size="100,100">You move to the majestic gates of the Forbidden City. The guard eyes you cautiously.
 &lt;img src=&quot;https://Thechosendzx.github.io/twine/Untitled%20design%20(4).jpg&quot;&gt;
 (if: $entryPaid is not true)[
     (if: $artifacts &gt; 0)[
         (set: $artifacts to $artifacts - 0)
         (set: $entryPaid to true)
         &quot;You have offered a valuable artifact. The path is now open to you, now and forever.&quot;
-        [[Enter the Forbidden City|Forbidden City]]
-    ]
+        [[Enter the Forbidden City|Forbidden City]]]
     (else:)[
         &quot;You must offer an artifact to pass these gates.&quot;
-        [[Return to collect more artifacts|Local Market]]
-    ]
+        [[Return to collect more artifacts|Local Market]] ]
 ](else:)[
     &quot;The path is now open to you.&quot;
     [[Enter the Forbidden City|Forbidden City]]
 ]
 </tw-passagedata><tw-passagedata pid="9" name="Forbidden City" tags="" position="1725,2100" size="100,100">
 As the gates open, you step into the Forbidden City. Before you lies the Hall of Supreme Harmony, where emperors once presided over court ceremonies and state affairs.
-
 The Forbidden City in Beijing is a vast museum that was once the Chinese imperial palace from the Ming dynasty to the end of the Qing dynasty. It is located in the center of Beijing, China. For almost 500 years, it served as the home of emperors and their households, as well as the ceremonial and political center of Chinese government.
-
-
 &lt;img src=&quot;https://Thechosendzx.github.io/twine/Untitled%20design%20(5).jpg&quot;&gt;
-
 [[continue|continue1]]
 
-</tw-passagedata><tw-passagedata pid="10" name="Untitled Passage" tags="0" position="1375,1200" size="100,100">&lt;div class=&quot;starts&quot;&gt;[Welcome, Captain. Start your journey to explore the secrets of the past.]&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="10" name="Untitled Passage" tags="0" position="1400,1175" size="100,100">&lt;div class=&quot;starts&quot;&gt;[Welcome, Captain. Start your journey to explore the secrets of the past.]&lt;/div&gt;
 
 
 (set: $money to 20)(set: $artifacts to 0) (set: $miningCount to 0)(set: $boughtArtifact to false)(set: $boughtArtifact1 to false)(set: $key to false)(set: $quizPlayed to false)(set: $LocationA to false)(set: $LocationB to false)(set: $LocationC to false)(set:$haslentFishermanMoney to true)
@@ -206,15 +187,14 @@ The Forbidden City in Beijing is a vast museum that was once the Chinese imperia
     [[Earn more money|Money Making]]
 ]
 
-</tw-passagedata><tw-passagedata pid="12" name="Money Making" tags="" position="1175,2425" size="100,100">
-As you approach the old mines located behind the bustling market, the scent of earth and the sound of distant picks against stone greet you. You&#39;re here to try your luck at mining, hoping to find valuable ores.
+</tw-passagedata><tw-passagedata pid="12" name="Money Making" tags="" position="1175,2425" size="100,100">As you approach the old mines located behind the bustling market, the scent of earth and the sound of distant picks against stone greet you. You&#39;re here to try your luck at mining, hoping to find valuable ores.
 (set: $miningCount to $miningCount + 1)
 (if: $miningCount &lt; 10)[
     (set: $result to (random: 1, 10))
     (if: $result &gt;= 9)[
         (set: $money to $money + 10)
         &lt;img src=&quot;https://Thechosendzx.github.io/twine/YES.webp&quot; alt=&quot;Miner found gold&quot;&gt;
-        You&#39;ve found some valuable ore worth 10 gold coins! Your total money is now $money.
+        You&#39;ve found some ore worth 10 gold coins! Your total money is now $money.
         [[Continue mining|Money Making]]
         [[Return to the market|Local Market]]
     ](else:)[
@@ -230,8 +210,7 @@ As you approach the old mines located behind the bustling market, the scent of e
     (set: $miningCount to 0)
     [[Return to the local market|Local Market]]
 ]
-</tw-passagedata><tw-passagedata pid="13" name="key" tags="" position="1200,2025" size="100,100">
-(if: $money &gt;= 50)[
+</tw-passagedata><tw-passagedata pid="13" name="key" tags="" position="1200,2025" size="100,100">(if: $money &gt;= 50)[
     (set: $money to $money - 50)
     (set: $key to true)
     &quot;You have successfully purchased a key for 50 gold coins. This key may unlock secrets and treasures within the ancient temple.&quot;
@@ -245,7 +224,7 @@ As you approach the old mines located behind the bustling market, the scent of e
 [[Hear more about the gods|Hear Gods Stories]]
 [[Explore the temples he pointed out|Visit Temples]]
 [[Head back to the harbor|Ancient Temple]]
-[[Visit the market|Go to Market]]</tw-passagedata><tw-passagedata pid="15" name="Learn About Buildings" tags="" position="2475,1875" size="100,100">Pointing to the structures, the fisherman explains, &quot;These buildings have withstood the ravages of time, designed by our ancestors to be both beautiful and practical. Notice the white walls? They keep our homes cool under the hot sun.&quot;
+[[Visit the market|Go to Market]]</tw-passagedata><tw-passagedata pid="15" name="Learn About Buildings" tags="" position="2500,1850" size="100,100">Pointing to the structures, the fisherman explains, &quot;These buildings have withstood the ravages of time, designed by our ancestors to be both beautiful and practical. Notice the white walls? They keep our homes cool under the hot sun.&quot;
 
 He gestures towards an elaborate structure that catches your eye.
 &lt;img src=&quot;https://Thechosendzx.github.io/twine/n.webp&quot; alt=&quot;sfthing&quot;&gt;
@@ -279,7 +258,7 @@ He gestures towards an elaborate structure that catches your eye.
     [[Leave the temple|Ancient Temple]]
 ]
 
-</tw-passagedata><tw-passagedata pid="19" name="Inquire Special Building" tags="" position="2600,1675" size="100,100">&lt;img src=&quot;https://Thechosendzx.github.io/twine/b.webp&quot; alt=&quot;Minfgshing&quot;&gt;
+</tw-passagedata><tw-passagedata pid="19" name="Inquire Special Building" tags="" position="2675,1650" size="100,100">&lt;img src=&quot;https://Thechosendzx.github.io/twine/b.webp&quot; alt=&quot;Minfgshing&quot;&gt;
 As you express interest in the architecture, the fisherman nods and points to the stone structures surrounding you. &quot;Greek architecture is famous for its precision and beauty. These buildings, especially temples, are built in three main styles: Doric, Ionic, and Corinthian, each identifiable by the columns and decorations.&quot;
 
 &quot;Doric columns are the simplest, sturdy and plain. Ionic columns are taller, with scrolls at the top. Corinthian columns are the most ornate, decorated with leaves and scrolls. The design not only reflects beauty but also the Greeks&#39; advanced understanding of mathematics and engineering.&quot;
@@ -363,7 +342,7 @@ He continues, &quot;It was with this thunderbolt that Zeus defeated the Titans, 
 (set: $money to $money + 100)
 (set: $quizPlayed to true)
 [[Return to the marketplace feeling richer|Go to Market]]
-</tw-passagedata><tw-passagedata pid="30" name="Sell Artifact" tags="" position="2575,2275" size="100,100">(if: $artifacts &gt; 0)[
+</tw-passagedata><tw-passagedata pid="30" name="Sell Artifact" tags="" position="2525,2325" size="100,100">(if: $artifacts &gt; 0)[
     (set: $money to $money + 90)
     (set: $artifacts to $artifacts - 1)
     &quot;You have successfully sold an artifact for 90 gold coins.&quot;
@@ -374,7 +353,7 @@ He continues, &quot;It was with this thunderbolt that Zeus defeated the Titans, 
     &quot;You currently have no artifacts to sell.&quot;
     [[Return to the marketplace|Go to Market]]
 ]
-</tw-passagedata><tw-passagedata pid="31" name="talk" tags="" position="2825,1725" size="100,100"> &lt;img src=&quot;https://Thechosendzx.github.io/twine/ddd.webp&quot; alt=&quot;bdfdduy&quot;&gt;
+</tw-passagedata><tw-passagedata pid="31" name="talk" tags="" position="2925,1650" size="100,100"> &lt;img src=&quot;https://Thechosendzx.github.io/twine/ddd.webp&quot; alt=&quot;bdfdduy&quot;&gt;
 (if: $haslentFishermanMoney is true)[
     &quot;Ah, my friend,&quot; the fisherman begins, nervously twisting his hat in his hands, &quot;I find myself in a bit of a bind. Today is my dear wife&#39;s birthday, and I wish to buy her a bouquet of her favorite flowers. However, I need 10 gold coins. Could you possibly lend me the some? I promise to repay you soon.&quot;
     [[Lend him the 10 gold coins|Lend Money]]
@@ -384,7 +363,7 @@ He continues, &quot;It was with this thunderbolt that Zeus defeated the Titans, 
     &quot;Hope you are having fun!&quot;
     [[Continue on your way|Go to Market]]
 ]
-</tw-passagedata><tw-passagedata pid="32" name="Lend Money" tags="" position="2625,1850" size="100,100">(set: $money to $money - 10)
+</tw-passagedata><tw-passagedata pid="32" name="Lend Money" tags="" position="2675,1800" size="100,100">(set: $money to $money - 10)
 (set: $lentFishermanMoney to false)
 &quot;You hand over the coins to the fisherman, whose face lights up with gratitude. &#39;Thank you, truly! You&#39;ve made an old sailor and his wife very happy today. I will not forget this kindness,&#39; he assures you with a broad smile.&quot;
 
@@ -394,7 +373,7 @@ He continues, &quot;It was with this thunderbolt that Zeus defeated the Titans, 
 The fisherman nods slowly, disappointment clouding his features. &quot;I understand, of course. Times are hard on us all,&quot; he says softly before turning away, leaving you with a lingering sense of regret.
 
 [[Continue exploring the market|Go to Market]]
-</tw-passagedata><tw-passagedata pid="34" name="continue" tags="" position="1075,1500" size="100,100">(if: $lentFishermanMoney is true)[
+</tw-passagedata><tw-passagedata pid="34" name="continue" tags="" position="975,1575" size="100,100">(if: $lentFishermanMoney is true)[
  At the end of this journey, you stand and reflect on your experiences, especially the small acts of kindness, like lending money to that fisherman. It was more than a simple favor, it was a profound human warmth.
 
 Remember that day at the market, you didn&#39;t hesitate to help that fisherman who needed to buy flowers for his wife&#39;s birthday celebration. This kind of act may seem small, but it can have a big impact. Your kindness was like planting a seed that eventually blossomed. The hundred gold coins the fisherman gave you later was not just a monetary reward, but a return of kindness and care.
