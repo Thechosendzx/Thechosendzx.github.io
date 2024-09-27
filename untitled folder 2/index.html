@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap">
+    </head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Democratic People's Republic of Three Ming Kingdom</title>
+    <style>
+       /* 设置整个页面的背景图片 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/bg3.png') no-repeat center center fixed; /* 替换为你的背景图片路径 */
+    background-size: cover; /* 背景图片覆盖整个页面 */
+    color: #333;
+    position: relative;
+}
+
+/* 使用伪元素来添加半透明覆盖层 */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* 调整透明度为 0.5 */
+    z-index: -1; /* 确保覆盖层在内容下方 */
+}
+
+
+        /* 导航栏头部样式 */
+        header {
+            background-color: #004d40;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Logo 和标题 */
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            width: 100px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .logo-container h1 {
+            font-size: 20px;
+            font-weight: normal;
+            
+        }
+
+        /* 顶部导航链接 */
+        .top-nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .top-nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .top-nav a:hover {
+            color: #ffdd57;
+        }
+
+        /* 下方的主要导航菜单 */
+        nav {
+            background-color: #00796b;;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* 确保导航栏在其他内容之上 */
+    background-color: #0c8075; /* 确保导航栏有背景色 */
+}
+
+   
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+            margin-right: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            color: #ffdd57;
+        }
+
+        /* 下拉菜单样式 */
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #18385d;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            margin: 0;
+        }
+
+        nav ul li ul li a {
+            display: block;
+            padding: 5px 20px;
+            color: white;
+        }
+
+        .social-icons a {
+            color: white; /* 设置图标为白色 */
+            font-size: 26px; /* 设置图标大小 */
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s ease; /* 增加悬停时的动画效果 */
+        }
+
+        .social-icons a:hover {
+            color: #ffdd57; /* 悬停时改变图标颜色 */
+        }
+
+
+/* Main Section */
+.main-section {
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #333;
+}
+
+/* Hero Section (标题区) */
+.hero-section {
+    padding: 40px 20px;
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+}
+
+.hero-section h1 {
+    font-family: 'Merriweather', serif; /* 使用 Merriweather 字体 */
+    font-size: 36px; /* 调整字体大小 */
+    font-weight: 700; /* 加粗字体 */
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0); /* 字体颜色为白色，背景为深色时突出 */
+}
+
+.hero-section p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    width: 250px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+/* Info Section (核心信息区) */
+.info-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.info-box {
+    width: 30%;
+    background-color: #497966;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* 添加平滑的变大效果 */
+}
+
+/* 悬停时 info-box 放大效果 */
+.info-box:hover {
+    transform: scale(1.1); /* 悬停时将 info-box 放大 10% */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* 增加阴影效果 */
+}
+
+.info-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 16px;
+}
+
+/* Footer Section */
+.footer-section {
+    background-color:  #004d40;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 3px solid  #004d40; /* 为 footer 添加顶部边框 */
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #bbb; /* 版权文字颜色稍微淡化 */
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #ffdd57; /* 悬停时改变链接颜色 */
+}
+
+/* Footer 社交图标 */
+.social-icons-footer a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons-footer a:hover {
+    color: #ffdd57; /* 悬停时改变图标颜色 */
+}
+
+
+
+    </style>
+</head>
+<body>
+    <!-- 头部区域 -->
+    <header>
+        <div class="logo-container">
+            <img src="images/logo1.jpg" alt="National Emblem">
+            <h1>Democratic People's Republic of Three Ming Kingdom</h1>
+        </div>
+        <div class="top-nav">
+            <a href="#">Newsroom</a>
+            <a href="#">Business</a>
+            <a href="#">Employees</a>
+            <a href="#">Travelers</a>
+            <a href="#">Visas</a>
+        </div>
+        <!-- 引入 Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<div class="social-icons">
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+</div>
+
+        
+    </header>
+
+    <!-- 主要导航区域 -->
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Policy Issues</a>
+                <ul>
+                    <li><a href="#">Domestic Policy</a></li>
+                    <li><a href="#">Foreign Policy</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Countries & Areas</a>
+                <ul>
+                    <li><a href="#">Asia</a></li>
+                    <li><a href="#">Europe</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Bureaus & Offices</a>
+                <ul>
+                    <li><a href="#">Finance Bureau</a></li>
+                    <li><a href="#">Health Bureau</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+                <ul>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">History</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main-section">
+        <!-- 简洁的标题区 -->
+        <section class="hero-section">
+            <h1>Welcome to the Democratic People's Republic of Three Ming Kingdom</h1>
+            <p class="hero-subtitle">A nation built on unity and strength under Mother Queen Cho Yum Min.</p>
+            <img src="images/logo1.jpg" alt="Three Ming Flag" class="hero-image">
+        </section>
+    
+        <!-- 核心信息区 -->
+        <section class="info-section">
+            <div class="info-box">
+                <h2>Capital</h2>
+                <p>Cho Yum Minh City, the heart of our culture and politics.</p>
+            </div>
+    
+            <div class="info-box">
+                <h2>Leadership</h2>
+                <p>Led by the visionary <strong>Mother Queen Cho Yum Min</strong>.</p>
+            </div>
+    
+            <div class="info-box">
+                <h2>Currency</h2>
+                <p>Three Ming Dollar (TMD), fixed at 1 TMD = 800 USD.</p>
+            </div>
+        </section>
+
+    </main>
+    
+
+<!-- 页脚区域 -->
+<footer class="footer-section">
+    <div class="footer-content">
+        <p>&copy; 2024 Democratic People's Republic of Three Ming Kingdom. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="social-icons-footer">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
