@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan.com</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+ <!-- 引入 FontAwesome CDN -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+
+
+</head>
+<body>
+    <canvas id="canvas"></canvas> <!-- 粒子画布 -->
+    
+    <header> 
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#timeline">About</a></li>
+                <li><a href="#gallery-section">Gallery</a></li>
+                <li><a href="#interactive-section">Video</a></li>
+                <li><a href="file/resume.pdf"  target="_blank">Resume <i class="fas fa-cloud-download-alt"></i> <!-- 云下载的图标 -->
+                </a> 
+            </ul>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/zhixin-deng-ryan/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://www.instagram.com/zhixin_ryan/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="images/wechat.jpg" target="_blank"><i class="fab fa-weixin fa-2x"></i></a>
+        </div>
+    </header>
+    
+    <div id="home">
+    <div class="large-text">ryan</div>
+    <div class="small-text">Ryan Deng</div>
+</div>
+
+
+<section id="timeline">
+    <div class="timeline-container">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-event left">
+            <div class="timeline-point">
+                <div class="timeline-year">High School</div>
+                Attended Hampton Roads Academy in Virginia
+            </div>
+        </div>
+
+        <!-- 2021 Fall：替代 Canva 图标为画笔 -->
+        <div class="timeline-event right">
+            <div class="timeline-point">
+                <div class="timeline-year">2021 Fall</div>
+                Joined Syracuse University to study Mass Communication
+                <!-- 替代 Canva 图标为设计图标 -->
+                <i class="fas fa-paint-brush skill-icon skill-right" data-skill="Canva"></i>
+                <i class="fas fa-ad skill-icon skill-top" data-skill="Adobe Creative Suite"></i>
+            </div>
+        </div>
+
+        <div class="timeline-event left">
+            <div class="timeline-point">
+                <div class="timeline-year">2022 Fall</div>
+                Worked as a Special Education Trainer at Taishoff Center, Syracuse University School of Education
+                <i class="fas fa-chalkboard-teacher skill-icon skill-left" data-skill="Special Education"></i>
+            
+            </div>
+        </div>
+
+        <div class="timeline-event right">
+            <div class="timeline-point">
+                <div class="timeline-year">2023 Fall</div>
+                Transfered to UNC to study Information Science & Media Technology
+                <i class="fas fa-cube skill-icon skill-top" data-skill="SketchUp"></i>
+                <i class="fab fa-html5 skill-icon skill-right" data-skill="HTML"></i>
+                <i class="fab fa-python skill-icon skill-bottom" data-skill="Python"></i>
+
+
+            </div>
+        </div>
+
+        <div class="timeline-event left">
+            <div class="timeline-point">
+                <div class="timeline-year">2024 Summer</div>
+                Worked as a Digital Media Assistant at Bazhou Xuanying Trading Co., Ltd
+                <i class="fab fa-tiktok skill-icon skill-top" data-skill="CapCut"></i>
+            </div>
+        </div>
+
+        <div class="timeline-event right">
+            <div class="timeline-point">
+                <div class="timeline-year">2024 Fall</div>
+                Worked as an IT Media Intern at UNC School of Medicine Department of Information Technology
+                <i class="fab fa-js skill-icon skill-top" data-skill="JavaScript"></i>
+  
+                <i class="fab fa-unity skill-icon skill-right" data-skill="Unity"></i>
+            </div>
+        </div>
+
+            <div class="timeline-point last-point">
+                <div class="timeline-year1">Future</div>
+                Perhaps, we could achieve great things together.
+            </div>
+        </div>
+        
+</section>
+
+
+
+<section id="gallery-section">
+    <div class="gallery-item" data-letter="G">
+        <div class="title-overlay-outside">G</div>
+        <img src="images/a.jpg" alt="Gallery Image 1">
+    </div>
+    <div class="gallery-item" data-letter="A">
+        <div class="title-overlay-outside">A</div>
+        <img src="images/h.jpg" alt="Gallery Image 2">
+    </div>
+    <div class="gallery-item" data-letter="L">
+        <div class="title-overlay-outside">L</div>
+        <img src="images/g.jpg" alt="Gallery Image 3">
+    </div>
+    <div class="gallery-item" data-letter="L">
+        <div class="title-overlay-outside">L</div>
+        <img src="images/e.jpg" alt="Gallery Image 4">
+    </div>
+    <div class="gallery-item" data-letter="E">
+        <div class="title-overlay-outside">E</div>
+        <img src="images/f.jpg" alt="Gallery Image 5">
+    </div>
+    <div class="gallery-item" data-letter="R">
+        <div class="title-overlay-outside">R</div>
+        <img src="images/landsacpe.JPG" alt="Gallery Image 6">
+    </div>
+    <div class="gallery-item" data-letter="Y">
+        <div class="title-overlay-outside">Y</div>
+        <img src="images/b.jpg" alt="Gallery Image 7">
+    </div>
+</section>
+<br><br><br><br><br><br><br><br>
+<!-- Modal to display full image when clicked -->
+<div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="full-image">
+    <div id="caption"></div>
+</div>
+
+<!-- 交互式电影图标 section -->
+<section id="interactive-section">
+    <!-- 图标，用于触发内容显示 -->
+    <div id="movie-icon">
+        <i class="fas fa-film"></i>
+    </div>
+
+    <!-- 媒体内容：视频、海报、简介 -->
+    <div id="media-content">
+        <h2>Documentary</h2> 
+        <!-- 视频和海报并排 -->
+        <div id="media-row">
+            <div id="poster-container">
+                <img src="images/poster 1.png" alt="Poster">
+            </div>
+
+            <div id="video-container">
+                <iframe src="https://uncch.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=31bc9c37-fa36-4db5-9a25-b20a0076496e&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto嵌入视频播放器" aria-description="To Shoot or Not to Shoot" ></iframe>
+            </iframe>
+
+            </div>
+        </div>
+
+        <!-- 简介文字 -->
+        <div class="text-content">
+            <h1>To Shoot or Not to Shoot</h1>
+            <p>A photography enthusiast, whose main work involves capturing others, finds herself increasingly haunted by a question:<strong> Shoot or Not to Shoot?</strong> <br> <br>
+
+                As models take the stage, photographers freely command them to strike poses, commands the models instinctively obey. This subconscious compliance prompts a deep ethical dilemma: Is it truly ethical? Could it inadvertently infringe upon models' human rights? Contemplating these questions leads her to cease shooting, plunging her into a dilemma.</p>
+        </div>
+    </div>
+</section>
+
+<section id="scroll-section">
+    <div class="scroll-container scroll-lefts" id="scroll-1">
+        <div class="scroll-text">Looking for creativity?
+        </div>
+    </div>
+    <div class="scroll-container scroll-right" id="scroll-2">
+        <div class="scroll-text">Want to collaborate?</div>
+    </div>
+    <div class="scroll-container scroll-left" id="scroll-3">
+        <div class="scroll-text">Ready to Meet Ryan？</div>
+    </div>
+</section>
+
+
+
+
+
+<footer>
+    <div id="Contact" class="footer-container">
+ 
+
+        <!-- 第三部分：个人信息 -->
+        <div class="footer-section">
+            <h3>Contact Info</h3>
+            <p>Name: Ryan Deng</p>
+            <p>Phone: (680)-236-2627</p>
+            <p>Email: ryandeng666@gmail.com</p>
+            <p>Chapel Hill, North Carolina, USA</p>
+<br>
+            <h3>Visit Websites</h3>
+            <a href="your-link-here" class="footer-button">Visit More Websites</a>
+            <h3>Play Games</h3>
+            <a href="your-link-here" class="footer-button">PLay Ryan's Game</a>
+        </div>
+
+    
+        <div class="footer-section">
+            <h3>Contact Me</h3>
+            <form id="contactForm">
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="from_name" required><br><br> <!-- 改为 from_name -->
+        
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="from_email" required><br><br> <!-- 改为 from_email -->
+        
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+        
+
+
+    <!-- 底部版权信息 -->
+    <div class="footer-bottom">
+        <p> Site created by Ryan Deng</p>
+        <p> © Copyright Ryan Deng 2024 All Rights Reserved</p>
+        <p id="last-updated">Last Updated: </p>
+    </div>
+</div>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</footer>
+
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
